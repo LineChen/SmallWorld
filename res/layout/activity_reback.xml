@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/personal_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="1dp" >
+
+        <ImageButton
+            android:id="@+id/personal_ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back"
+            android:onClick="onBack" />
+
+        <ImageView
+            style="@style/divider_style"
+            android:layout_toRightOf="@id/personal_ib_back" />
+
+        <TextView
+            android:id="@+id/personal_tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="反馈"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#ffcccdd1" />
+
+    <EditText
+        android:id="@+id/et_reback"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="top"
+        android:hint="反馈意见"
+        android:maxLines="10"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgetpass_et_emiladdress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/submit_button_selector"
+        android:onClick="onSendReback"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

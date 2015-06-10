@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/listview_chat_bg">
+
+    <ImageView
+        android:id="@+id/iv_lv_it_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/image_num_1"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_lv_it_icon"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            android:id="@+id/iv_lv_it_ivusername"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="用户" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/iv_lv_it_ivusername"
+            android:text="  邀请你加入  " />
+
+        <TextView
+            android:id="@+id/iv_lv_it_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/temp"
+            android:text="队伍名称" />
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/iv_lv_it_ivusername"
+            android:text="主题：" />
+
+        <TextView
+            android:id="@+id/iv_lv_it_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/iv_lv_it_ivusername"
+            android:layout_toRightOf="@id/temp2"
+            android:text="主题" />
+        
+        <Button 
+            android:id="@+id/iv_lv_it_drop"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:textSize="5sp"
+            android:background="@drawable/btn_drop"/>
+        <Button 
+            android:id="@+id/iv_lv_it_agree"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/iv_lv_it_drop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_agree"
+            android:textSize="5sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button"
+     >
+
+    <!-- 输入框等 -->
+
+    <LinearLayout
+        android:id="@+id/ll_msg_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/IbSend_faceicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatview_face_button_selector"
+            android:onClick="onButtonClick" />
+
+        <ImageButton
+            android:id="@+id/IbSend_moreselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_select_button_selector"
+            android:onClick="onButtonClick" />
+
+        <EditText
+            android:id="@+id/Et_msgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_input"
+            android:inputType="textMultiLine"
+            android:padding="7dp" />
+
+        <ImageButton
+            android:id="@+id/IbSend_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chatview_voice_rec_selector"
+            android:onClick="onButtonClick" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_popwindow"
+        android:layout_below="@id/ll_msg_send"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" 
+        android:visibility="gone"
+        >
+
+        <!-- 表情栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/face_vPager"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <LinearLayout
+                android:id="@+id/ll_face_dot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/face_vPager"
+                android:layout_marginTop="0dp"
+                android:gravity="center|bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/face_dot0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/face_page_dot" />
+
+                <ImageView
+                    android:id="@+id/face_dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/face_page_dot" />
+
+                <ImageView
+                    android:id="@+id/face_dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/face_page_dot" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 表情栏 end -->
+
+
+        <!-- 更多选项(相册、拍照...)栏 -->
+
+        <GridView
+            android:id="@+id/moreselect_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentBottom="true"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:paddingTop="20dp"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" />
+        <!-- 更多选项(相册、拍照...)栏 end -->
+
+
+        <!-- 点击录音 -->
+
+        <LinearLayout
+            android:id="@+id/Ll_voiceRecding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/Tv_voiceRecding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:gravity="center"
+                android:text="点击开始录音" />
+
+            <ImageButton
+                android:id="@+id/Ib_voiceRecding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/chatview_recding"
+                android:onClick="onButtonClick" />
+            <!-- 点击录音end -->
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_sendtime"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:text="2015-4-25 19:28" />
+
+        <com.example.hellostranger.view.GifTextView
+            android:id="@+id/tv_chatcontent"
+            style="@style/chat_content_style"
+            android:layout_below="@+id/tv_sendtime"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/chat_msg_left_selector"
+            android:clickable="true"
+            android:maxWidth="250dp"
+            android:textSize="16.0sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_chatimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sendtime"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/chat_msg_left_selector"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/Iv_chatimage"
+                android:layout_width="90dp"
+                android:layout_height="140dp"
+                android:clickable="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
