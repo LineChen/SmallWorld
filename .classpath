@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/android_api_1.1_forsdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu-SpeechRecognitionUI-SDK-Android-1.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BaiduLBS_Android.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/fastjson-1.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/galaxy_mini.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/galaxy.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/VoiceRecognition-1.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mina-core-2.0.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/slf4j-api-1.7.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/bcprov-ext-jdk15on-149.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-codec-1.10.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
