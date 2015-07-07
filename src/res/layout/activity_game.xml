@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back"
+            android:onClick="onBack" />
+
+        <ImageView
+            style="@style/divider_style"
+            android:layout_toRightOf="@id/btn_back" />
+
+        <Button
+            android:id="@+id/chating_friendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:onClick="onFinish"
+            android:text="游戏"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_passgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pass_game"
+            android:onClick="onPassGame" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/game_tv_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="28dp"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/game_iv_rt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" >
+
+            <ImageView
+                android:id="@+id/game_iv_bg_00"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_01"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_toRightOf="@id/game_iv_bg_00"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_02"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_toRightOf="@id/game_iv_bg_01"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_10"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_bg_00"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_11"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_bg_00"
+                android:layout_toRightOf="@id/game_iv_bg_10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_12"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_bg_00"
+                android:layout_toRightOf="@id/game_iv_bg_11"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_20"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_bg_10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_21"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_bg_10"
+                android:layout_toRightOf="@id/game_iv_bg_20"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+
+            <ImageView
+                android:id="@+id/game_iv_bg_22"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_bg_10"
+                android:layout_toRightOf="@id/game_iv_bg_21"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_num_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" >
+
+            <ImageView
+                android:id="@+id/game_iv_00"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_01"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_toRightOf="@id/game_iv_00"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_02"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_toRightOf="@id/game_iv_01"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_10"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_00"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_11"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_00"
+                android:layout_toRightOf="@id/game_iv_10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_12"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_00"
+                android:layout_toRightOf="@id/game_iv_11"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_20"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_21"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_10"
+                android:layout_toRightOf="@id/game_iv_20"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/game_iv_22"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_below="@id/game_iv_10"
+                android:layout_toRightOf="@id/game_iv_21"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/numivdsp"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

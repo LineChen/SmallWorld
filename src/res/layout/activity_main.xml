@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.example.hellostranger.view.MainView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/main_layout_edge"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:tag="leftmenu" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/main_layout_edge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/page_bg" />
+
+            <RelativeLayout
+                android:id="@+id/main_layout_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/main_layout_bottom" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/main_layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_bottom" >
+
+                <ImageView
+                    android:id="@+id/main_ib_part0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_chat_home_press" />
+
+                <ImageView
+                    android:id="@+id/main_ib_part1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_myfriend_nor" />
+
+                <ImageView
+                    android:id="@+id/main_ib_part2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_find_nor" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.example.hellostranger.view.MainView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_regstepthree"
+    android:background="@color/page_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/regthree_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"	    
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:inputType="textPassword" 
+        android:hint="@string/hint_password"/>
+
+    <EditText
+        android:id="@+id/regthree_et_passwordagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"	    
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/regthree_et_password"
+        android:inputType="textPassword"
+        android:hint="@string/passwdagain" />
+<!-- 
+
+    <TextView
+        android:id="@+id/regthree_tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regthree_et_passwordagain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#FF0000"/>
+       
+       <RelativeLayout
+            android:id="@+id/fra_p2_msg"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="小提示:密码" />
+
+        </RelativeLayout>  
+          -->
+
+</RelativeLayout>

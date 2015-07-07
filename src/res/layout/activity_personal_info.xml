@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    tools:context=".PersonalInfoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/personal_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="1dp" >
+
+        <ImageButton
+            android:id="@+id/personal_ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back" />
+
+        <ImageView
+            style="@style/divider_style"
+            android:layout_toRightOf="@id/personal_ib_back" />
+
+        <TextView
+            android:id="@+id/personal_tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人信息"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/personal_layout_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/personal_iv_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_main" />
+
+                    <com.example.hellostranger.view.RoundImageView
+                        android:id="@+id/personal_iv_headlogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/personal_iv_bg"
+                        android:layout_alignLeft="@id/personal_iv_bg"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/personal_tv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/personal_iv_headlogo"
+                        android:layout_toRightOf="@id/personal_iv_headlogo"
+                        android:text="活力值:"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/personal_tv_hlmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/personal_iv_headlogo"
+                        android:layout_toRightOf="@id/personal_tv_msg"
+                        android:text="0"
+                        android:textColor="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/personal_rl_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/personal_tv_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/nickname"
+                        android:textColor="@color/cool_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/personal_tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/personal_tv_nick"
+                        android:text="@string/username"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/jump" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/personal_rl_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/personal_tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/sex"
+                        android:textColor="@color/cool_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/personal_tv_sexvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/personal_tv_sex"
+                        android:text="@string/boy"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/jump" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/personal_rl_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/personal_tv_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/birthday"
+                        android:textColor="@color/cool_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/personal_tv_birday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/personal_tv_birth"
+                        android:text="@string/birthday"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/jump" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/personal_rl_signatrue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/personal_layout_mid"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/personal_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/sign"
+                    android:textColor="@color/cool_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/personal_tv_signvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/personal_tv_sign"
+                    android:hint="你还没有个性签名哟"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/jump" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#7D7D7D</color>
+    <color name="text_gray">#adb9cd</color>
+    <color name="text_dgray">#627288</color>
+    <color name="dialog_black">#393939</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="gold">#b89766</color>
+    <color name="slite_green">#9DCC4D</color>
+    <color name="cool_black">#222222</color>
+    <color name="custom_pottery_green">#45B91C</color>
+    <color name="custom_inputright_gray">#999999</color>
+    <color name="waimai_shop_list_alpha_bg_color">#80ffffff</color>
+    <color name="custom_white">#ffffffff</color>
+    <color name="coupon_circle_background">#ffd3d6da</color>
+    <color name="custom_line">#ffc8cacc</color>
+    <color name="custom_background">#ffeef0f1</color>
+    <color name="page_bg">#f3f4f8</color>
+    <color name="page_title">#f5f6fa</color>
+    <color name="text_color_signin">#838488</color>
+    <color name="purple">#845FB4</color>
+
+</resources>

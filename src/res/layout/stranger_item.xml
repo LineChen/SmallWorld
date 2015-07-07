@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+         android:background="@drawable/button_selector">
+
+        <ImageView
+            android:id="@+id/friend_headpic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" 
+            android:src="@drawable/imomo2"/>
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/friend_headpic"
+            android:text="虞姬"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/loc_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/friend_loc"
+            android:layout_toRightOf="@+id/friend_headpic"
+            android:background="@drawable/icon_location" />
+        
+        <TextView
+            android:id="@+id/friend_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/loc_icon"
+            android:text="一公里内"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

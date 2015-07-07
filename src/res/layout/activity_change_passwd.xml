@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    tools:context=".ChangePasswdActivity" >
+
+    <RelativeLayout
+        android:id="@+id/setting_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/change_ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back" />
+
+        <ImageView
+            style="@style/divider_style"
+            android:layout_toRightOf="@id/change_ib_back" />
+
+        <TextView
+            android:id="@+id/setting_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/change_tv_oldpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="输入密码:" />
+
+    <EditText
+        android:id="@+id/change_et_pwd1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:hint="6-16位字符，区分大小写"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/change_tv_newpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="确认密码:" />
+
+    <EditText
+        android:id="@+id/change_et_pwd2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:hint="6-16位字符，区分大小写"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/change_btn_submit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/submit_button_selector"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

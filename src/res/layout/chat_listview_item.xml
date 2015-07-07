@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/listview_chat_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <ImageView
+            android:id="@+id/chat_listview_item_iv_hp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/imomo2"
+            android:contentDescription="@string/hpdsp"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/chat_lsitview_item_iv_numbg"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/relativeLayout1"
+            android:background="@drawable/red_point"
+            android:focusable="false"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/chat_lsitview_item_tv_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/relativeLayout1"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/chat_listview_item_iv_hp"
+            android:focusable="false"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:id="@+id/chat_listview_item_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="用户名"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chat_listview_item_iv_v"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/chat_listview_item_tv_username" />
+
+            <TextView
+                android:id="@+id/chat_listview_item_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/chat_listview_item_tv_username"
+                android:gravity="center_vertical"
+                android:text="内容"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/chat_listview_item_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="日期"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/chat_listview_item_btn_del"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_del"
+        android:focusable="false" />
+
+</LinearLayout>
