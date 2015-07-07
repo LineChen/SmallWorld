@@ -65,12 +65,11 @@
         <activity android:name="com.example.hellostranger.activity.SettingActivity" />
         <activity android:name="com.personalinfo.activity.MessageManageActivity" />
         <activity android:name="com.personalinfo.activity.ChangePasswdActivity" />
-        <activity android:name="com.example.hellostranger.InvitationActivity" >
-        </activity>
-        <activity android:name="com.example.hellostranger.CreateGroupActivity" >
-        </activity>
-        <activity android:name="com.example.hellostranger.activity.FriendMsgSettingActivity" >
-        </activity>
+        <activity android:name="com.example.hellostranger.InvitationActivity" />
+        <activity android:name="com.example.hellostranger.CreateGroupActivity" />
+        <activity android:name="com.example.hellostranger.activity.FriendMsgSettingActivity" />
+        
+        <activity android:name="com.chat_robot.ChatRobotActivity"/>
     </application>
 
     <!-- 百度语音所需权限 -->
